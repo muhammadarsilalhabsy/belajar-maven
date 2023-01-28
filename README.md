@@ -79,21 +79,22 @@ Maven mendukung properties untuk menyimpan konfigurasi layaknya sebuah variable
 berikut cara membuat konfigurasi di maven
 
 ```xml
-
-<properties>
+<project>
+  <properties>
     <!--  cara membuat properties  -->
     <variable.name>example configuration</variable.name>
-</properties>
+  </properties>
 
-<dependencies>
-  <dependency>
-    <groupId>com.google.code.gson</groupId>
-    <artifactId>gson</artifactId>
-    <!-- cara menggunakan properties-->
-    <version>${gson.version}</version>
-  </dependency>
-</dependencies>
-        
+  <dependencies>
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <!-- cara menggunakan properties-->
+      <version>${gson.version}</version>
+    </dependency>
+  </dependencies>  
+</project>
+
 ```
 
 # Membuat Distribution File
